@@ -387,6 +387,7 @@ export default function AuctionNFT(user) {
                 type={"NFT"}
                 SelectedTitle={title}
                 enddate={SelectedendDate}
+                EventWallet={EventWallet}
             />
             <DirectDonateModal
                 show={DirectModalShow}

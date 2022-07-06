@@ -14,7 +14,8 @@ export default function DonateNFTModal({
 	type,
 	EventID,
 	SelectedTitle,
-	enddate
+	enddate,
+	EventWallet
 }) {
 
 	const router = useRouter();
@@ -51,6 +52,7 @@ export default function DonateNFTModal({
 			title: 'Asset Metadata',
 			type: 'object',
 			properties: {
+				eventID:EventID,
 				name: {
 					type: 'string',
 					description: name,
@@ -82,6 +84,10 @@ export default function DonateNFTModal({
 				date: {
 					type: 'string',
 					description: enddate
+				},
+				wallet:{
+					type: 'string',
+					description: EventWallet
 				}
 			},
 			bids: []

@@ -49,7 +49,7 @@ export default function BidNFTModal({
 		BidNFTBTN.disabled = true;
 		console.log("bidding")
 		if (Number(Amount) < Number(Highestbid)) {
-			activateWarningModal(`Amount cannot be under ${Highestbid} CEUR`);
+			activateWarningModal(`Amount cannot be under ${Highestbid} DEV`);
 			return;
 		} else {
 			var alertELM = document.getElementById("alert");
